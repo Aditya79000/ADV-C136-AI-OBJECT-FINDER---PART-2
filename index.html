@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>ADV-C135 AI OBJECT FINDER </title>
+    <style>
+body{
+    background: linear-gradient(red 10%,pink 80%,purple 10%);
+}
+.heading{
+
+ font-size: 23px;
+ width: 100%;
+ margin: 0px;
+}
+#start{
+    background-color: rgb(88, 241, 68);
+    font-size: 23px;
+    font-style: italic;
+    color: white;
+}
+#button{
+    background-color: red;
+    width: 3%;
+    height: 3%;
+    border-radius: 10px; 
+}
+#button1{
+    background-color: rgb(255, 230, 0);
+    width: 3%;
+    height: 3%;
+    border-radius: 10px;
+}
+    </style>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+   
+     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+     
+     <link rel="stylesheet" type="text/css" href="style.css">
+   
+    </head>
+<body>
+    <center>
+    <h1 class="btn btn-info heading"> AI OBJECT FINDER </h1>
+    <br>
+    <h3 class="btn btn-info">The input name which you will give should match the names present in CoCo model then only it will detect</h3>
+    <br>
+    <h3 class="btn btn-info">Object Name :</h3>
+    <br><br>
+   <input type="text" width="10%" height="20%">
+      <br><br>
+    <button id="start" class="btn btn-success">Start</button>
+    <br><br>
+    <button id="button"></button>
+    <button id="button1"></button>
+</center>
+<script>
+    function setup()
+{
+    canvas = createCanvas(300, 300);
+    canvas.center();
+    video = createCapture(300, 300);
+    video.hide();
+}
+</script>
+</body>
+</html>
